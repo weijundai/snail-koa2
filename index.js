@@ -8,8 +8,8 @@ const app = new Koa();
 
 app.use(logger());
 
-const helloWorld = ctx => {
-  ctx.body = 'Hello World!!!';
+const helloWorld = (ctx) => {
+  ctx.body = 'Hello World!,haha dwj!!!!';
 };
 
 router.get('/', helloWorld);
