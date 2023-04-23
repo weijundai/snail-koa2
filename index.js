@@ -9,10 +9,13 @@ const app = new Koa();
 app.use(logger());
 
 const helloWorld = (ctx) => {
-  ctx.body = 'Hello World!,haha dwj!!!!';
+  ctx.body = 'Hello World!';
 };
 
 router.get('/', helloWorld);
+router.get('/haha',(ctx)=>{
+  ctx.body='hahahah';
+})
 
 app.use(router.routes());
 
