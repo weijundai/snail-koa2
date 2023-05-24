@@ -17,6 +17,10 @@ router.get('/haha',(ctx)=>{
   ctx.body='hahahah';
 })
 
+router.get('/dwj',(ctx)=>{
+  ctx.body='dwj'
+})
+
 app.use(router.routes());
 
 app.listen(3000);
